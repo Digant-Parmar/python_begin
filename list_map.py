@@ -1,6 +1,13 @@
-def flow(student_marks):
-    for i in range(len(student_marks)):
-    	print(student_marks[i])
+def foo(student_marks,query_name,name):
+    for i in student_marks:
+       if(i==query_name):
+            x =(sum(student_marks[i])/len(student_marks[i]))
+            print('%.2f'%x)
+           
+
+
+
+
 
 
 if __name__ == '__main__':
@@ -11,4 +18,4 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
-flow(student_marks)
+foo(student_marks,query_name,name)
